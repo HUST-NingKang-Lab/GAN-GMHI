@@ -1,0 +1,6 @@
+s__Alistipes_senegalensis
+s__Bacteroides_coprocola
+s__Bacteroides_intestinalis
+s__Bifidobacterium_angulatum
+s__Lachnospiraceae_bacterium_1_1_57FAA
+s__Roseburia_hominis
