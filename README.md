@@ -34,7 +34,7 @@ Second step, running the script `demo/Merge.py` to merge those taxonomy abundanc
 bash demo/Merge.py "demo/output/Non-healthy-BER.csv"
 ```
 
-For convenience, we provide the script `demo/run.sh` to perform all steps.
+For convenience, we provide the script `demo/run.sh` to perform all the steps.
 ```bash
 bash demo/run.sh
 ```
