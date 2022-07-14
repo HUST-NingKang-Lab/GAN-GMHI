@@ -5,3 +5,25 @@ GAN-GMHI framework consists of three stages, constructing a dataset containing p
 We have performed a comprehensive analysis on 2,636 healthy and 1,711 non-healthy (including 12 disease phenotypes) individuals’ stool metagenomes from 34 published studies (Gupta, et al.). The taxonomy abundance table is available at the "/data" directory.
 ## Scripts
 The source codes used to reproduce all the results of this study is available at the "/scripts" directory.
+## Demo
+To remove the batch effects between samples from different studies, we used the GAN approach. This example will show you the entire batch effect removal process.The batch effect removal (BER) process including two steps. 
+
+First step, running the scipt `demo/GAN4BER.py` for each phenotype (disease) and this script will generate a taxonomy abundance table that the batch effect has been removed. Here, five diseases contains samples from multiple studies, including "CRC", "Crohns disease", "Obesity", "Overweight", and "T2D". To perform the first step, run the following commands at the directory that you placed the GAN-GMHI repository.
+```bash
+python demo/GAN4BER.py "CRC"
+python demo/GAN4BER.py "Crohns disease"
+python demo/GAN4BER.py "Obesity"
+python demo/GAN4BER.py "Overweight"
+python demo/GAN4BER.py "T2D"
+```
+
+Second step, running the script `demo/Merge.py` to merge those taxonomy abundance table generated in the first step. 
+```bash
+bash demo/Merge.py "demo/output/Non-healthy-BER.csv"
+```
+
+For convenience, we provide the script `demo/run.sh` to perform all steps.
+```bash
+bash demo/run.sh
+```
+
