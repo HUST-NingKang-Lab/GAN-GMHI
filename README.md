@@ -18,7 +18,7 @@ We have performed a comprehensive analysis on 2,636 healthy and 1,711 non-health
 ## Scripts
 The source codes used to reproduce all the results of this study is available at the `/scripts` directory.
 ## Demo
-To remove the batch effects between samples from different studies, we used the GAN approach. This example will show you the entire batch effect removal process, all files and script is avaiable at the `/demo` directory.The batch effect removal (BER) process including two steps. 
+To remove the batch effects between samples from different studies, we used the GAN approach. This example will show you the entire batch effect removal process, all files and scripts are avaiable at the `/demo` directory.The batch effect removal (BER) process including two steps. 
 
 First step, running the scipt `demo/GAN4BER.py` for each phenotype (disease) and this script will generate a taxonomy abundance table that the batch effect has been removed. Here, five diseases contains samples from multiple studies, including "CRC", "Crohns disease", "Obesity", "Overweight", and "T2D". Running the following commands.
 ```bash
