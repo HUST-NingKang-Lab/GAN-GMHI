@@ -31,7 +31,7 @@ python demo/GAN4BER.py "T2D"
 
 Second step, running the script `demo/Merge.py` to merge those taxonomy abundance tables produced in the first step. 
 ```bash
-bash demo/Merge.py "demo/output/Non-healthy-BER.csv"
+python demo/Merge.py "demo/output/Non-healthy-BER.csv"
 ```
 
 For convenience, we provide the script `demo/run.sh` to perform all the steps.
